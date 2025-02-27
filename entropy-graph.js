@@ -82,7 +82,7 @@ function EntropyForceGraph({
     const containerHeight = height;
     
     // Centering calculations
-    const centerX = containerWidth / 2;
+    const centerX = containerWidth / 2.15;
     const centerY = containerHeight / 2;
 
     // Zoom functionality
