@@ -299,7 +299,7 @@ function EntropyForceGraph({
           const themeNodes = node.filter(d => d.theme === theme);
           
           themeNodes
-            .attr("r", nodeRadius * 1.5)
+            .attr("r", nodeRadius * 1)
             .style("fill-opacity", 1);
           
           // Find and highlight links connected to theme nodes
