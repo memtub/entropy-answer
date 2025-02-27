@@ -356,7 +356,7 @@ class EntropyNode {
 
     network.addNode({
         id: 'quazar',
-        name: 'Quazars',
+        name: 'Pulsars',
         entropyProduction: 1e84,
         connections: ['universal_heat_death','neutron_star'],
         description: 'Most efficient entropy producer per unit mass through Hawking radiation',
