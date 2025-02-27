@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Universe Entropy Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="node.js"></script>
+    <script src="entropy-graph.js"></script>
+    <script src="entropy-scatter.js"></script>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="page-title">How Entropy could be the Answer...</h1>
+            <h2 class="page-subtitle">to Life, the Universe and Everything</h2>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <span>Scroll Below</span>
+        <div class="scroll-arrow">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 20L12 4" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18 14L12 20L6 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="entropy-explanation">
+        <p>
+            In physics, entropy is a measure of the amount of disorder or randomness in a system. It is a fundamental concept in thermodynamics and statistical mechanics. The second law of thermodynamics states that the total entropy of an isolated system always increases over time. This means that the universe tends towards a state of maximum disorder.
+        </p>
+        <p>
+            While entropy is often associated with the idea of decay and the arrow of time, it also plays a vital role in the emergence of complex structures. Many physicists argue that the drive to maximize entropy production is what has led to the formation of atoms, stars, galaxies, and even life itself. In this sense, entropy could be seen as the driving force behind the evolution and diversity of the universe.
+        </p>
+        <p>
+            In the early stages of the universe, just after the Big Bang, the entropy was remarkably low. As time progresses, the entropy of the universe continuously increases, driven by various processes such as the fusion reactions in stars, the formation and growth of supermassive black holes, and the eventual decay of matter. This unidirectional increase in entropy gives rise to the "arrow of time" - the one-way flow of time from the past to the future. In essence, entropy can be seen as the driving force behind the evolution of the universe, from the highly ordered initial state to an eventual state of maximum disorder known as the "heat death" of the universe.
+        </p>
+    </div>
+
+    <div class="graph-explanation">
+        <p>
+            The interactive graph below showcases the entropy production efficiency of various processes and structures across the universe, spanning from quantum fluctuations to cosmic phenomena. It also shows how higher entropy efficiency systems evolve from lower entropy efficiency systems. Each node symbolizes a specific entity or process, with nodes positioned along the horizontal axis based on their entropy production efficiency values. Nodes with lower entropy production efficiency are situated on the left, while nodes with higher entropy production efficiency are found on the right. The connecting lines between nodes illustrate the relationships and dependencies between these processes. Click on the nodes to understand the path of how the object/system came to be.
+        </p>
+        <p>It is to be noted, that in both low entropy production efficiency and high entropy production efficiency, complexity is low, it is in the middle that complexity forms and life arises.</p>
+    </div>
+    <div class="app-container">
+        <div class="graph-controls">
+            
+            <div class="theme-filter-buttons">
+                <button class="theme-filter" data-theme="quantum">Quantum</button>
+                <button class="theme-filter" data-theme="atomic">Atomic</button>
+                <button class="theme-filter" data-theme="biological">Biological</button>
+                <button class="theme-filter" data-theme="cosmic">Cosmic</button>
+                <button class="theme-filter" data-theme="technology">Technology</button>
+                <button class="theme-filter" data-theme="all">All Themes</button>
+            </div>
+
+            <div class="zoom-controls">
+                <button id="zoom-in">Zoom In</button>
+                <button id="zoom-out">Zoom Out</button>
+                <button id="zoom-reset">Reset</button>
+            </div>
+
+            
+        </div>
+        <div class="graph-container">
+            <div class="entropy-label low-entropy-label">
+                <span>Low Entropy Efficiency / Beginning of Universe</span>
+            </div>
+            <div class="entropy-label high-entropy-label">
+                <span>High Entropy Efficiency / End of Universe</span>
+            </div>
+            <div id="universe-graph"></div>
+        </div>
+    </div>
+    <div class="additional-section">
+        <h2>Further Analysis</h2>
+        <p>Entropy, often misunderstood as a measure of mere disorder, is in fact a profound driver of complexity and emergence in our universe. As systems evolve, they don't simply break down, but rather transform and reorganize, finding increasingly sophisticated ways to dissipate energy and generate complexity. For example, cosmic gas structures such as nebulas break down to form stars and solar systems, and the planets in these solar systems could host life.</p>
+        <p>This process reveals that it is natural for huge cosmic systems with higher total entropy to break down to create complex structures, which each have lower total entropy but much higher efficiency.</p>
+        <div class="additional-graph-wrapper">
+            <div id="additional-graph-container" class="graph-container-alt"></div>
+        </div>
+        <div class="horizontal-legend">
+            <div class="legend-item">
+                <span class="legend-color quantum"></span>
+                <span class="legend-label">Quantum/Atomic</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color biological"></span>
+                <span class="legend-label">Biological</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color cosmic"></span>
+                <span class="legend-label">Cosmic</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color technology"></span>
+                <span class="legend-label">Technology</span>
+            </div>
+        </div>
+
+        <div class="kardashev">
+            <h2>Kardashev Gap: The limitations of Our Knowledge</h2>
+
+            <div class="image-comparison-section">
+                <div class="image-container">
+                    <img src="kardashevgap1.png" alt="First Comparative Image">
+                </div>
+                <div class="image-container">
+                    <img src="kardashevgap2.png" alt="Second Comparative Image">
+                </div>
+            </div>
+
+            <p>The Kardashev gap (red column) reveals a big limitation in our understanding of entropy and complexity across cosmic scales. Our current knowledge is overwhelmingly human-centric, constructed through a narrow lens of observable phenomena that barely scratches the surface of universal complexity. The gap between cosmic entropy producers like neutron stars—which generate massive energy through extreme physical processes—and our most advanced technological systems like social media networks is staggering, but in the grand scheme of the observable universe, such gaps may not even exist. Alien civilizations could have advanced complex technologies which bridge the gap to extreme cosmic phenomenons such as neutron stars.</p>
+        </div>
+        
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p>Through the lens of the project, entropy has emerged as a unifying thread in the fabric of the universe, explaining how quantum fluctuations down the life eventually lead to life. But it also puts in perspective an extremely distant future of the universe, where life would seize to exist, and everything interesting and complex would seize to exist, as both in low entropy and high entropy, the universe tends to minimum complexity. Keeping in mind the Kardashev gap, we are lucky to be existing in a world where things have just started to get interesting in the grand scheme of the universe. Like Carl Sagan said, we are a way for the universe to know and experience itself. </p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>References</h3>
+                <ul class="reference-list">
+                    <li><a href="https://www.quantamagazine.org/a-new-thermodynamics-theory-of-the-origin-of-life-20140122/" target="_blank">https://www.quantamagazine.org/a-new-thermodynamics-theory-of-the-origin-of-life-20140122/</a></li>
+                    <li><a href="https://doi.org/10.1016/0895-7177(94)90188-0" target="_blank">https://doi.org/10.1016/0895-7177(94)90188-0</a></li>
+                    <li><a href="https://link.springer.com/chapter/10.1007/978-3-642-40154-1_22" target="_blank">https://link.springer.com/chapter/10.1007/978-3-642-40154-1_22</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="invisible-heading">References</h3>
+                <ul class="reference-list">
+                    <li><a href="https://www.mdpi.com/1099-4300/17/7/4863" target="_blank">https://www.mdpi.com/1099-4300/17/7/4863</a></li>
+                    <li><a href="https://books.google.fr/books/about/The_Biggest_Ideas_in_the_Universe.html?id=3bFVEAAAQBAJ" target="_blank">https://books.google.fr/books/about/The-Biggest-Ideas-in-the-Universe.html</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Entropy" target="_blank">https://en.wikipedia.org/wiki/Entropy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="invisible-heading">References</h3>
+                <ul class="reference-list">
+                    <li><a href="https://www.jstor.org/stable/2564602" target="_blank">https://www.jstor.org/stable/2564602</a></li>
+                    <li><a href="https://iopscience.iop.org/article/10.3847/1538-3881/ab792b/meta" target="_blank">https://iopscience.iop.org/article/10.3847/1538-3881/ab792b/meta</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Tridib Saha | NMIMS School of Design | Data Design MEE</p>
+        </div>
+    </footer>
+</body>
+</html>
