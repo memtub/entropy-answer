@@ -6,7 +6,7 @@ function EntropyForceGraph({
     const {
       width = 2400,
       height = 1600,
-      nodeRadius = 10
+      nodeRadius = 8
     } = options;
   
     const minEntropyProduction = Math.min(...nodes.map(n => n.entropyProduction));
@@ -27,7 +27,7 @@ function EntropyForceGraph({
         if (value <= 1e-5) {
           return d3.scaleLog()
             .domain([1e-20, 1e-5])
-            .range([200, 350])(value);
+            .range([220, 350])(value);
         } else if (value <= 1e3) {
           return d3.scaleLog()
             .domain([1e-5, 1e3])
@@ -40,9 +40,9 @@ function EntropyForceGraph({
           return d3.scalePow()
             .exponent(0.01)
             .domain([1e20, 1e90])
-            .range([900, 2000])(value);
+            .range([900, 1950])(value);
         } else {
-          return 2100;
+          return 2000;
         }
     }
 
@@ -77,7 +77,7 @@ function EntropyForceGraph({
     const g = svg.append("g");
 
     // Calculate initial zoom to center and slightly zoom
-    const initialScale = 1.5; // Slightly bigger zoom
+    const initialScale = 1.4; // Slightly bigger zoom
     const containerWidth = width;
     const containerHeight = height;
     
