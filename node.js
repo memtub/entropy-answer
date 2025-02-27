@@ -628,7 +628,7 @@ class EntropyNode {
     network.addNode({
         id: 'social_media',
         name: 'Social Media',
-        entropyProduction: 50e49,
+        entropyProduction: 450e49,
         connections: ['computer','satellite'],
         description: 'Water management for crops',
         theme: 'technology'
